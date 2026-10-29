@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Killian Nkounkou — Portfolio</title>
+<meta name="description" content="Portfolio de Killian Nkounkou, étudiant BTS SIO SLAM — développement, bases de données, cybersécurité.">
+<link rel="preconnect" href="https://googleapis.com">
+<link href="https://googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <nav class="nav">
+    <div class="nav__brand">killian<span class="blink">_</span>nkounkou</div>
+    <ul class="nav__links">
+      <li><a href="#about"><span class="idx">01</span>profil</a></li>
+      <li><a href="#skills"><span class="idx">02</span>compétences</a></li>
+      <li><a href="#experience"><span class="idx">03</span>expérience</a></li>
+      <li><a href="#projects"><span class="idx">04</span>projets</a></li>
+      <li><a href="#veille"><span class="idx">05</span>veille</a></li>
+      <li><a href="#contact"><span class="idx">06</span>contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="terminal" aria-hidden="true">
+        <div class="terminal__bar"><span></span><span></span><span></span></div>
+        <div class="terminal__body">
+          <div class="line out" id="typedRole"></div>
+        </div>
+      </div>
+
+      <h1 class="hero__title" id="heroName">Killian Nkounkou</h1>
+      <p class="hero__tagline" id="heroTagline"></p>
+
+      <div class="hero__meta">
+        <span>●</span> <span id="heroAvailability"></span>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" id="ctaCv" href="#" download>Télécharger le CV</a>
+        <a class="btn" id="ctaGithub" href="#" target="_blank" rel="noopener">Voir le GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/killian-nkounkou/" target="_blank" rel="noopener noreferrer">Voir le Linkedin</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFIL / PARCOURS -->
+  <section class="module" id="about">
+    <div class="wrap">
+      <div class="path"><span>~</span><span class="sep">/</span><span class="cur">profil</span></div>
+      <div class="module__head" style="margin-top:0.8rem;">
+        <h2>Profil</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p id="summaryText"></p>
+        </div>
+        <div>
+          <ul class="edu-list" id="eduList"></ul>
+          <div class="goal-card">
+            <div class="path"><span class="cur" id="goalTitle"></span></div>
+            <p style="margin:0;color:var(--text-muted);font-size:0.92rem;" id="goalDetail"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section class="module" id="skills">
+    <div class="wrap">
+      <div class="path"><span>~</span><span class="sep">/</span><span class="cur">compétences</span></div>
+      <div class="module__head" style="margin-top:0.8rem;">
+        <h2>Compétences</h2>
+        <p>Acquises en formation (BTS SIO SLAM), en stage et en projets personnels.</p>
+      </div>
+      <div class="skills" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- EXPÉRIENCE -->
+  <section class="module" id="experience">
+    <div class="wrap">
+      <div class="path"><span>~</span><span class="sep">/</span><span class="cur">expérience</span></div>
+      <div class="module__head" style="margin-top:0.8rem;">
+        <h2>Expérience professionnelle</h2>
+      </div>
+      <div id="xpList"></div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section class="module" id="projects">
+    <div class="wrap">
+      <div class="path"><span>~</span><span class="sep">/</span><span class="cur">projets</span></div>
+      <div class="module__head" style="margin-top:0.8rem;">
+        <h2>Projets</h2>
+        <p>Une sélection de projets réalisés en formation, en stage ou en dehors des cours.</p>
+      </div>
+      <div class="projects" id="projectsList"></div>
+    </div>
+  </section>
+
+  <!-- VEILLE TECHNO -->
+  <section class="module" id="veille">
+    <div class="wrap">
+      <div class="path"><span>~</span><span class="sep">/</span><span class="cur">veille</span></div>
+      <div class="module__head" style="margin-top:0.8rem;">
+        <h2>Veille technologique</h2>
+      </div>
+      <div class="veille-card">
+        <span class="veille-card__tag">SÉCURITÉ</span>
+        <div>
+          <h3 id="veilleSubject"></h3>
+          <p id="veilleSummary"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="module" id="contact" style="border-bottom:none;">
+    <div class="wrap">
+      <div class="path"><span>~</span><span class="sep">/</span><span class="cur">contact</span></div>
+      <div class="module__head" style="margin-top:0.8rem;">
+        <h2>Contact</h2>
+        <p>N'hésitez pas à me contacter pour toute opportunité de stage.</p>
+      </div>
+      <div class="contact__grid" id="contactGrid"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Site conçu et développé par Killian Nkounkou — dernière mise à jour <span id="lastUpdate"></span>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
