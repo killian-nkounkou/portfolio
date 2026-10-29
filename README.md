@@ -41,8 +41,7 @@ jour : le site se reconstruit automatiquement à partir de ce fichier.
 ## Ajouter le CV
 
 Placer le PDF du CV à la racine du dépôt sous le nom
-`CV_Killian-Nkounkou.pdf` (ou modifier la valeur `cvFile` dans `data.js` si
-le fichier est renommé). Le bouton « Télécharger le CV » de la page
+`CV_Killian-Nkounkou.pdf`. Le bouton « Télécharger le CV » de la page
 d'accueil pointe automatiquement vers ce fichier.
 
 ## Ajouter un nouveau projet avec son propre dépôt
@@ -80,7 +79,6 @@ python3 -m http.server 8000
 - Ajouter une page dédiée par projet (captures d'écran, README détaillé)
 - Publier de nouvelles fiches de veille technologique au format de
   `veille-authentification.html`
-- Ajouter un mode clair / sombre
 - Internationaliser le contenu (FR/EN) si utile pour candidater à l'étranger
 
 ## Licence
